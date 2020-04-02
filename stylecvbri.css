@@ -261,7 +261,7 @@ article h3
 
 /* pour les smartphones*/
 
-@media all and (max-width: 790px)
+@media screen and (max-width: 790px)
 {
 
 .row

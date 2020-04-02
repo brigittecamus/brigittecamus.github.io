@@ -258,3 +258,45 @@ article h3
 
 
 /** FIN Decoration de la deuxieme partie droite**/
+
+/* pour les smartphones*/
+
+@media all and (max-width: 790px)
+{
+
+.row
+{
+	flex-direction: column;
+}
+.column
+{
+	flex: 0 0 100%;
+	max-width: 100%;
+
+}
+
+.row:nth-child(2)
+{
+	flex-direction: column-reverse;
+}
+
+.photo
+{
+	padding-top: 15px;
+	padding-bottom: 15px
+}
+
+header
+{
+	height: 250px;
+	padding-left: 30px;
+}
+
+article
+{
+	padding-left: 30px;
+}
+}
+
+/* FIN pour les smartphones*/
+

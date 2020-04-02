@@ -37,6 +37,7 @@ body
   	max-width: 70%;
 
 }
+/** FIN Mise en place des boites et font general**/
 
 /** Mise en place de la premiere partie **/
 
@@ -66,7 +67,7 @@ h1
 {
 	margin: 0 0;
 }
-
+/** FIN Mise en place de la premiere partie **/
 
 /** Decoration de la premiere partie**/
 
@@ -97,6 +98,163 @@ h2 em
 	font-style: normal;
 	border-bottom: 2px solid rgb(64,196,255);
 }
+/** FIN Decoration de la premiere partie**/
+
+/** Mise en place de la deuxieme partie gauche**/
+
+.gauche h3
+{
+	display:flex;
+	width:auto;
+	height: 40px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(64,64,64,0.9);
+	color: rgb(64,196,255); 
+}
+
+aside .contact
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: left;
+}
+
+aside .apropos
+{
+
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: justify;
+
+}
+
+footer
+{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	padding-left: 70px;
+	padding-right: 70px;
+	text-align: justify;
+}
+
+/** FIN Mise en place de la deuxieme partie gauche**/
+
+/** Decoration de la deuxieme partie gauche**/
+strong
+{
+	text-transform: uppercase;
+}
+
+.contact, .apropos
+{
+	font-size: smaller;
+}
+
+/** FIN Decoration de la deuxieme partie gauche**/
+
+/** Mise en place de la deuxieme partie droite**/
+
+.boardpart
+{
+	display: flex;
+}
+.boardpartleft
+{
+	display: flex;
+	width: 30%;
+}
 
 
+.boardpartright
+{
+	width: 70%;
+	padding-left: 15px;
+}
 
+.recoleft
+{
+	flex: 0 0 50%;
+}
+
+.icones
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+/** FIN Mise en place de la deuxieme partie droite**/
+
+/** Decoration de la deuxieme partie droite**/
+
+article
+{
+	padding-right: 50px;
+	padding-left: 70px;
+}
+
+.leftpart .far
+{
+	padding-right: 30px;
+}
+
+
+.far
+{
+	padding-right: 20px;
+}
+
+.fas
+{
+	padding-right: 20px;
+}
+
+.iconesdot
+{
+	padding-top: 15px;
+}
+
+h3 .fas
+{
+	font-size: larger;
+	color: rgb(64,196,255)
+}
+
+.icones .fas
+{
+	color: rgba(64,64,64,0.9);
+	font-size: 50px;
+
+}
+
+.board
+{
+	font-size: smaller;
+}
+
+
+.iconesdot .fas
+{
+	font-size: xx-small;
+}
+
+.iconesdot .far
+{
+	font-size: smaller;
+}
+
+article h3
+
+{
+
+	border-bottom: 2px solid rgb(64,196,255);
+}
+
+
+/** FIN Decoration de la deuxieme partie droite**/

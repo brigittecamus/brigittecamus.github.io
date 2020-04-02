@@ -1,5 +1,102 @@
-em
+
+/** Mise en place des boites et font general**/
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: Roboto, "Open sans", sans-serif;
+
+}
+
+.container
+{
+
+	max-width: 1190px;
+	width: 100%;
+	margin: 0 auto;
+	border: 2px grey solid;
+}
+
+.row
+{
+	display: flex;
+}
+
+.gauche
+{
+	flex: 0 0 30%;
+	max-width:30%;
+	min-width: 224px;
+	background-color: rgb(64,196,255);
+}
+.droite
+{
+  	flex: 0 0 70%;
+  	max-width: 70%;
+
+}
+
+/** Mise en place de la premiere partie **/
+
+.photo
+{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+header
+{
+	display: flex;
+	flex-wrap: wrap;
+	height: 332px;
+	align-content: center;
+}
+
+header
+{
+	padding-left: 70px;
+}
+h1
+{
+	margin: 0 0;
+}
+
+
+/** Decoration de la premiere partie**/
+
+img
+{
+    border-radius: 50%;
+    border: 4px solid rgba(64,64,64,0.2);
+}
+
+h1
+{
+	font-size: 60px;
+}
+
+h2
+{
+	color: rgb(64,64,64);
+}
+
+ h1 em
+{
+  	font-style: normal;
+  	color: rgb(64,196,255);
+}
+
+h2 em
 {
 	font-style: normal;
-	color: rgb(254,202,7);
+	border-bottom: 2px solid rgb(64,196,255);
 }
+
+
+

@@ -105,7 +105,6 @@ aside .contact
 }
 aside .apropos
 {
-
 	padding-left: 50px;
 	padding-right: 50px;
 	text-align: justify;
@@ -242,10 +241,11 @@ header
 {
 	height: 250px;
 	padding-left: 30px;
+	padding-right: 30px;
 }
 h1
 {
-	font-size: 50px;
+	font-size: 40px;
 }
 .reco
 {
@@ -269,7 +269,15 @@ h3
 {
 h1
 {
-	font-size: 40px;
+	font-size: 30px;
+}
+h3
+{
+	font-size: x-small;
+}
+.board
+{
+	font-size: x-small;
 }
 article
 {
@@ -283,6 +291,11 @@ article
 aside .contact
 {
 	padding-left: 30px;
+}
+aside .apropos
+{
+	padding-left: 30px;
+	padding-right: 30px;
 }
 }
 /* FIN pour les ecrans de tres petites tailles*/

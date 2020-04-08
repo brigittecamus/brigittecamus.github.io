@@ -1,35 +1,36 @@
 
 /** Mise en place des boxs**/
-*{
-	box-sizing: border-box;
-}
 .container
 {
 	max-width: 1190px;
 	width: 100%;
+	height: 100%;
 	margin: 0 auto;
 	border: 2px grey solid;
 }
 .row
 {
 	display: flex;
+	height: 100%;
 }
 .gauche
 {
-	flex: 0 0 30%;
-	max-width:30%;
+	display: flex;
+	flex-direction: column;
+	width:30%;
 	min-width: 224px;
 	background-color: rgb(64,196,255);
+	justify-content: space-between;
 }
 .droite
 {
-  	flex: 0 0 70%;
-  	max-width: 70%;
+  	display: flex;
+  	width: 70%;
 }
 /** FIN Mise en place des boxs**/
 
 /** Mise en place de la premiere partie **/
-.photo
+header aside
 {
 	display: flex;
 	width: 100%;
@@ -38,20 +39,11 @@
 	padding-top: 60px;
 	padding-bottom: 50px;
 }
-header
-{
-	display: flex;
-	flex-wrap: wrap;
-	height: 332px;
-	align-content: center;
-}
-header
+header header
 {
 	padding-left: 70px;
-}
-h1
-{
-	margin: 0 0;
+	padding-right: 70px;
+	padding-top: 30px;
 }
 /** FIN Mise en place de la premiere partie **/
 
@@ -68,6 +60,7 @@ img
 h1
 {
 	font-size: 60px;
+	font-weight: normal;
 }
 h2
 {
@@ -83,40 +76,44 @@ h2 em
 	font-style: normal;
 	border-bottom: 2px solid rgb(64,196,255);
 }
+h4
+{
+	font-weight: bold;
+}
 /** FIN Decoration de la premiere partie**/
 
 /** Mise en place de la deuxieme partie gauche**/
 .gauche h3
 {
-	display:flex;
-	width:auto;
+	display: flex;
+	width: auto;
 	height: 40px;
-	margin: 0 auto;
 	align-items: center;
 	justify-content: center;
 	background-color: rgba(64,64,64,0.9);
 	color: rgb(64,196,255); 
+	margin-top: 0px
 }
-aside .contact
+h4
 {
-	padding-left: 50px;
-	padding-right: 50px;
-	text-align: left;
+	font-weight: bold;
 }
-aside .apropos
+aside h4
 {
-	padding-left: 50px;
-	padding-right: 50px;
 	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+	word-wrap: break-word;
+}
+.section aside p
+{
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 footer
 {
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	padding-left: 70px;
-	padding-right: 70px;
-	text-align: justify;
+	padding-bottom: 30px;
 }
 /** FIN Mise en place de la deuxieme partie gauche**/
 
@@ -125,9 +122,19 @@ strong
 {
 	text-transform: uppercase;
 }
-.contact, .apropos
+.gauche aside h3
 {
-	font-size: smaller;
+	font-size: x-large;
+}
+.gauche footer h3
+{
+	font-size: x-large;
+}
+footer .fas
+{
+	padding: 10px;
+    border-radius: 100%;
+    border: 2px solid rgba(64,64,64,0.9);	
 }
 /** FIN Decoration de la deuxieme partie gauche**/
 
@@ -140,17 +147,19 @@ strong
 {
 	display: flex;
 	width: 30%;
+	padding-right: 25px;
 }
 .boardpartright
 {
 	width: 70%;
-	padding-left: 15px;
 }
 .reco
 {
 	display: flex;
 	width: 100%;
 	flex-direction: row;
+	word-wrap: break-word;
+	padding-bottom: 30px;
 }
 .recoleft, .recoright
 {
@@ -161,13 +170,11 @@ strong
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 /** FIN Mise en place de la deuxieme partie droite**/
 
 /** Decoration de la deuxieme partie droite**/
-article
+.droite article
 {
 	padding-right: 50px;
 	padding-left: 70px;
@@ -196,70 +203,79 @@ h3 .fas
 .icones .fas
 {
 	color: rgba(64,64,64,0.9);
-	font-size: 50px;
-}
-.board
-{
-	font-size: smaller;
+	font-size: 40px;
 }
 .iconesdot .fas
 {
 	font-size: xx-small;
+	color: rgb(64,196,255)
 }
 .iconesdot .far
 {
 	font-size: smaller;
+	color: rgb(64,196,255)
 }
 article h3
 {
 	border-bottom: 2px solid rgb(64,196,255);
+	font-size: x-large;
+}
+article h4
+{
+	color: rgb(64,64,64);
+}
+article p
+{
+		color: rgb(64,64,64);
 }
 /** FIN Decoration de la deuxieme partie droite**/
 
 /* pour les ecrans de petites tailles*/
 @media screen and (max-width: 790px)
 {
-.row
+header .row
 {
 	flex-direction: column;
 }
-.column
-{
-	flex: 0 0 100%;
-	max-width: 100%;
-}
-.row:nth-child(2)
+.section .row
 {
 	flex-direction: column-reverse;
 }
-.photo
+.droite
+{
+	width: 100%;
+}
+.recoright, .recoleft
+{
+	width: 100%;
+}
+.gauche
+{
+	width: 100%;
+}
+header article
+{
+	padding-top: 0px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+header aside
 {
 	padding-top: 15px;
-	padding-bottom: 15px
-}
-header
-{
-	height: 250px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-bottom: 15px;
 }
 h1
 {
 	font-size: 40px;
 }
+.row .droite article
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
 .reco
 {
-	flex-direction: column;
-	padding-left: 20px;
-}
-article
-{
 	padding-left: 30px;
-	padding-right: 30px;
-}
-h3
-{
-	font-size: 1em;
 }
 }
 /* FIN pour les ecrans de petites tailles*/
@@ -267,35 +283,19 @@ h3
 /* pour les ecrans de tres petites tailles*/
 @media screen and (max-width: 400px)
 {
-h1
+.reco
 {
-	font-size: 30px;
-}
-h3
-{
-	font-size: x-small;
-}
-.board
-{
-	font-size: x-small;
-}
-article
-{
-	padding-left: 10px;
-	padding-right: 10px;
+	flex-direction: column;
+	padding-left: 20px;
 }
 .far, .fas
 {
-	padding-right: 10px;
+	padding-right: 5px;
 }
-aside .contact
+.row .droite article
 {
-	padding-left: 30px;
-}
-aside .apropos
-{
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 }
-/* FIN pour les ecrans de tres petites tailles*/
+/* FIN pour les écrans de très petites tailles*/

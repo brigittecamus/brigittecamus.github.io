@@ -39,7 +39,7 @@ header aside
 	padding-top: 60px;
 	padding-bottom: 50px;
 }
-header header
+header article
 {
 	padding-left: 70px;
 	padding-right: 70px;
@@ -183,11 +183,7 @@ footer .fas
 {
 	padding-right: 30px;
 }
-.far
-{
-	padding-right: 20px;
-}
-.fas
+.far, .fas
 {
 	padding-right: 20px;
 }
@@ -256,8 +252,6 @@ header .row
 header article
 {
 	padding-top: 0px;
-	padding-left: 50px;
-	padding-right: 50px;
 }
 header aside
 {

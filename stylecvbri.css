@@ -122,6 +122,15 @@ strong
 {
 	text-transform: uppercase;
 }
+aside p
+{
+	color: rgba(64,64,64,0.9);
+}
+aside em
+{
+	font-style: normal;
+	font-weight: bold;
+}
 .gauche aside h3
 {
 	font-size: x-large;
@@ -216,9 +225,10 @@ article h3
 	border-bottom: 2px solid rgb(64,196,255);
 	font-size: x-large;
 }
-article h4
+article em
 {
-	color: rgb(64,64,64);
+	font-style: normal;
+	font-weight: bold;
 }
 article p
 {

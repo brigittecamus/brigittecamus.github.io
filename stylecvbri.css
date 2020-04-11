@@ -51,6 +51,7 @@ header article
 body
 {
 	font-family: Roboto, "Open sans", sans-serif;
+	margin: 0;
 }
 img
 {
@@ -130,6 +131,11 @@ aside em
 {
 	font-style: normal;
 	font-weight: bold;
+}
+a
+{
+	color: rgba(64,64,64,0.9);
+	text-decoration: none; 
 }
 .gauche aside h3
 {

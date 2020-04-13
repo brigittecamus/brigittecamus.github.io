@@ -242,7 +242,7 @@ article p
 }
 /** FIN Decoration de la deuxieme partie droite**/
 
-/* pour les ecrans de petites tailles*/
+/** pour les ecrans de petites tailles**/
 @media screen and (max-width: 790px)
 {
 header .row
@@ -288,9 +288,9 @@ h1
 	padding-left: 30px;
 }
 }
-/* FIN pour les ecrans de petites tailles*/
+/** FIN pour les ecrans de petites tailles**/
 
-/* pour les ecrans de tres petites tailles*/
+/** pour les ecrans de tres petites tailles**/
 @media screen and (max-width: 400px)
 {
 .reco
@@ -308,4 +308,27 @@ h1
 	padding-right: 5px;
 }
 }
-/* FIN pour les écrans de très petites tailles*/
+/** FIN pour les écrans de très petites tailles**/
+
+/** Version imprimable**/
+@media print 
+{ 
+body 
+{
+	line-height: 1.1;
+}
+.container
+{
+	border: none;
+}
+.contact
+{
+	padding-top: 30px;
+}
+.apropos
+{
+	padding-top: 310px;
+}
+
+}
+/** FIN Version imprimable**/
